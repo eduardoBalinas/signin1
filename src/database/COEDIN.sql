@@ -1,0 +1,14 @@
+
+CREATE DATABASE `COEDIN` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+use COEDIN;
+
+show tables;
+
+
+CREATE TABLE IF NOT EXISTS `Director` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(25) NOT NULL,
+   `password` VARCHAR(25) NOT NULL, 
+  PRIMARY KEY `pk_id`(`id`)
+) ENGINE = InnoDB;
